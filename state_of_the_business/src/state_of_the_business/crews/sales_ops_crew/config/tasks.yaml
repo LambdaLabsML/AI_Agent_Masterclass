@@ -1,0 +1,30 @@
+sales_ops_b2c_report:
+  description: >
+    Analyze the ecommerce (B2C) sales data for {month} {year} in this dataset: {direct_sales_data}.
+    Your analysis should focus on key performance metrics such as total revenue, number of orders, average order value (AOV), top-selling products, and customer acquisition trends.
+    Identify month-over-month changes compared to the previous month and highlight any notable patterns or anomalies.
+    Ensure data is accurate, up-to-date, and presented in a clear, executive-friendly format.
+  expected_output: >
+    A structured markdown report including:
+    1. Executive Summary (3-5 bullet points)
+    2. Key Metrics Table (Revenue, Orders, AOV, Customer Acquisition, Conversion Rate)
+    3. Top 5 Best-Selling Products (with units sold and revenue generated)
+    4. Month-over-Month Performance Comparison
+    5. Notable Trends or Anomalies (brief analysis)
+    6. Recommendations (if applicable)
+  agent: sales_ops_agent
+
+sales_ops_b2b_report:
+  description: >
+    Analyze the B2B sales data for {month} {year} in this dataset: {b2b_sales_data}.
+    Your analysis should include total closed-won revenue, number of deals closed, average deal size, sales cycle length, pipeline coverage, and new logo acquisition.
+    Compare performance to the prior month and identify any material deviations, emerging trends, or areas of concern.
+    Focus on delivering insights that are actionable for both sales leadership and executive stakeholders.
+  expected_output: >
+    A structured markdown report including:
+    1. Executive Summary (3-5 bullet points)
+    2. Key Metrics Table (Closed-Won Revenue, Deal Count, Average Deal Size, Sales Cycle Length, Pipeline Coverage, New Logos)
+    3. Month-over-Month Performance Comparison
+    4. Notable Trends, Risks, or Anomalies
+    5. Recommendations for Sales Leadership
+  agent: sales_ops_agent

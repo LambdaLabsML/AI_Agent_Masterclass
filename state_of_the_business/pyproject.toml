@@ -1,0 +1,53 @@
+[project]
+name = "state_of_the_business"
+version = "0.1.0"
+description = "state_of_the_business using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.9,<1.0.0",
+    "fastapi[standard]>=0.112.0,<0.113.0",
+    "colorlog>=6.9.0,<7.0.0",
+    "pyyaml>=6.0.2,<7.0.0",
+    "exa_py>=1.0.6,<2.0.0",
+    "scrapegraphai>=1.30.0,<2.0.0",
+    "firecrawl-py>=1.5.0,<2.0.0",
+    "requests>=2.32.3",
+    "playwright>=1.48.0",
+    "uvicorn>=0.32.1",
+    "google-cloud-aiplatform>=1.75.0",
+    "crewai[tools]>=0.95.0",
+    "crewai>=0.102.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.10.4",
+    "pandas>=2.2.3",
+    "gspread>=6.1.4",
+    "python-multipart>=0.0.20",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.3,<9.0.0",
+    "black>=24.10.0,<25.0.0",
+    "isort>=5.13.2,<6.0.0",
+    "flake8>=7.1.1,<8.0.0"
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+multi-line-output = 3
+
+[project.scripts]
+kickoff = "state_of_the_business.main:kickoff"
+plot = "state_of_the_business.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
