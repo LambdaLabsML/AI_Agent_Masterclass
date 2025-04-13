@@ -1,0 +1,35 @@
+cs_ops_board_report:
+  description: >
+    Create a comprehensive Customer Success board report based on the latest full calendar quarter of ticket and support data.
+    
+    Your report must include:
+    - Customer Satisfaction Summary (CSAT distribution and trends by channel and product group)
+    - SLA Compliance Analysis (first response and resolution compliance rates by priority and agent group)
+    - Ticket Volume and Load Trends (total tickets created, by channel, spaceport, and time trends)
+    - Agent and Team Performance Review (first response time, resolution time, agent interaction counts, CSAT by agent)
+    - Customer Risk and Escalation Assessment (low CSAT cases, SLA violation patterns, high-risk customers)
+
+    Highlight major positive trends, emerging risks, and operational bottlenecks. Provide strategic recommendations for leadership.
+  expected_output: >
+    A structured markdown report including:
+    1. Executive Summary (5-7 bullet points)
+    2. Section 1: Customer Satisfaction Overview
+       - Avg CSAT, CSAT by Channel, CSAT by Product Group
+       - CSAT Distribution Table (1–5 stars)
+    3. Section 2: SLA Compliance Report
+       - First Response SLA Compliance % (Overall and by Priority)
+       - Resolution SLA Compliance % (Overall and by Agent Group)
+    4. Section 3: Ticket Volume and Load Trends
+       - Total Tickets, Volume by Source and Spaceport
+       - Ticket creation volume trends (week/month)
+    5. Section 4: Agent and Team Performance
+       - Avg First Response and Resolution Times by Agent
+       - Avg Agent Interactions per Ticket
+       - CSAT by Agent
+    6. Section 5: Risk and Escalation Report
+       - Low CSAT Ticket % (Scores 1–2)
+       - SLA Violation Impact on Satisfaction
+       - High-risk customer profiles (spaceport, topic, agent group)
+    7. Section 6: Strategic Recommendations
+       - 3–5 actionable suggestions for improving CSAT, SLA compliance, and retention
+  agent: customer_success_ops_agent

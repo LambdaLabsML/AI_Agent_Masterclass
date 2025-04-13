@@ -12,29 +12,35 @@ llm = LLM(
 
 
 @CrewBase
-class SalesOpsB2BCrew:
-    """Sales Ops B2B Crew"""
+class MktOpsCrew:
+    """Marketing Ops Crew"""
 
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
 
     @agent
-    def sales_ops_agent(self) -> Agent:
+    def mkt_ops_agent(self) -> Agent:
         return Agent(
-            config=self.agents_config["sales_ops_agent"],
+            config=self.agents_config["mkt_ops_agent"],
             tools=[DatasetFileReadTool()],
             llm=llm,
         )
 
     @task
-    def sales_ops_b2b_report(self) -> Task:
+    def mkt_ops_performance_report(self) -> Task:
         return Task(
-            config=self.tasks_config["sales_ops_b2b_report"],
+            config=self.tasks_config["mkt_ops_performance_report"],
+        )
+
+    @task
+    def mkt_ops_retention_risk_report(self) -> Task:
+        return Task(
+            config=self.tasks_config["mkt_ops_retention_risk_report"],
         )
 
     @crew
     def crew(self) -> Crew:
-        """Creates the Sales Ops Crew"""
+        """Creates the Marketing Ops Crew"""
         return Crew(
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator
