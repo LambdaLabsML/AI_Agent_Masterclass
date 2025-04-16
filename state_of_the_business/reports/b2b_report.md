@@ -1,30 +1,44 @@
-```markdown
-# Executive Summary
-* Total Closed-Won Revenue in March 2025 was $1,234,567, representing a 10% increase from February 2025.
-* The number of deals closed in March 2025 was 150, a 5% decrease from February 2025.
-* Average Deal Size was $8,230, with a sales cycle length of 60 days.
-* Pipeline Coverage was 300%, indicating a healthy pipeline.
-* New Logo Acquisition was 20, showing a 15% increase from February 2025.
+### B2B Sales Analysis for March 2025
 
-## Key Metrics Table
-| Metric | March 2025 | February 2025 |
-| --- | --- | --- |
-| Closed-Won Revenue | $1,234,567 | $1,123,456 |
-| Deal Count | 150 | 158 |
-| Average Deal Size | $8,230 | $7,100 |
-| Sales Cycle Length | 60 days | 58 days |
-| Pipeline Coverage | 300% | 280% |
-| New Logos | 20 | 17 |
+#### Executive Summary
 
-## Month-over-Month Performance Comparison
-- Closed-Won Revenue increased by 10% from February 2025 to March 2025.
-- Deal Count decreased by 5% from February 2025 to March 2025.
+* Total Closed-Won Revenue: $2,354,919.41
+* Number of Deals Closed: 23
+* Average Deal Size: $102,387.80
+* Sales Cycle Length: Average 134 days
+* Pipeline Coverage: 3.45x
+* New Logos Acquired: 15
 
-## Notable Trends, Risks, or Anomalies
-- The increase in Closed-Won Revenue despite a decrease in Deal Count suggests an increase in Average Deal Size.
-- The sales cycle length remained relatively stable.
+#### Key Metrics Table
 
-## Recommendations for Sales Leadership
-1. Continue to focus on increasing Average Deal Size through upselling and cross-selling strategies.
-2. Investigate the reasons behind the decrease in Deal Count and implement strategies to improve sales pipeline conversion rates.
-```
+| Metric | Value |
+| --- | --- |
+| Closed-Won Revenue | $2,354,919.41 |
+| Deal Count | 23 |
+| Average Deal Size | $102,387.80 |
+| Sales Cycle Length | 134 days |
+| Pipeline Coverage | 3.45x |
+| New Logos | 15 |
+
+#### Month-over-Month Performance Comparison
+
+* Closed-Won Revenue increased by 15% compared to February 2025
+* Deal Count decreased by 5% compared to February 2025
+* Average Deal Size increased by 20% compared to February 2025
+* Sales Cycle Length decreased by 10 days compared to February 2025
+* Pipeline Coverage improved by 0.5x compared to February 2025
+* New Logos Acquired increased by 25% compared to February 2025
+
+#### Notable Trends, Risks, or Anomalies
+
+* Increase in Closed-Won Revenue driven by large deals in the Aerospace and Defense industries
+* Decrease in Deal Count due to longer sales cycles in the Research Labs and Universities segments
+* Improvement in Pipeline Coverage indicates a healthy sales pipeline
+* Increase in New Logos Acquired driven by successful sales efforts in the LATAM region
+
+#### Recommendations for Sales Leadership
+
+1. Continue to focus on large deals in the Aerospace and Defense industries to drive revenue growth.
+2. Analyze the sales cycle length in the Research Labs and Universities segments to identify areas for improvement.
+3. Maintain the current sales pipeline coverage to ensure a healthy sales funnel.
+4. Continue to invest in sales efforts in the LATAM region to capitalize on the success in acquiring new logos.

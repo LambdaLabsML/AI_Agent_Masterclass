@@ -1,19 +1,14 @@
-import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai import LLM
-from state_of_the_business.tools.file_read_tool import DatasetFileReadTool
+from src.tools.file_read_tool import DatasetFileReadTool
+from src.utils.llm_config import LLMConfig
 
-llm = LLM(
-    base_url=os.getenv("LAMBDA_API_BASE"),
-    model="openai/llama-4-maverick",
-    api_key=os.getenv("LAMBDA_API_KEY"),
-)
+llm = LLMConfig().llm
 
 
 @CrewBase
-class SalesOpsB2BCrew:
-    """Sales Ops B2B Crew"""
+class SalesOpsB2CCrew:
+    """Crew for generating the B2C sales report."""
 
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
@@ -27,9 +22,9 @@ class SalesOpsB2BCrew:
         )
 
     @task
-    def sales_ops_b2b_report(self) -> Task:
+    def sales_ops_b2c_report(self) -> Task:
         return Task(
-            config=self.tasks_config["sales_ops_b2b_report"],
+            config=self.tasks_config["sales_ops_b2c_report"],
         )
 
     @crew

@@ -1,14 +1,10 @@
-import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai import LLM
-from state_of_the_business.tools.file_read_tool import DatasetFileReadTool
 
-llm = LLM(
-    base_url=os.getenv("LAMBDA_API_BASE"),
-    model="openai/llama-4-maverick",
-    api_key=os.getenv("LAMBDA_API_KEY"),
-)
+from src.utils.llm_config import LLMConfig
+from src.tools.file_read_tool import DatasetFileReadTool
+
+llm = LLMConfig().llm
 
 
 @CrewBase
