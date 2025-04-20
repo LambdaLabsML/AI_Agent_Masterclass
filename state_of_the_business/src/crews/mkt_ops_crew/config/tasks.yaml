@@ -19,6 +19,13 @@ mkt_ops_performance_report:
     5. Web Engagement and Funnel Analysis
     6. Key Insights by Customer Segment
     7. Strategic Recommendations for Marketing Leadership
+    
+    For each section, include:
+    - The methodology used to analyze the data
+    - Key calculations and formulas applied
+    - Reasoning behind conclusions drawn
+    - Supporting data points and metrics
+    - Any assumptions made during analysis
   agent: mkt_ops_agent
 
 mkt_ops_retention_risk_report:
@@ -38,4 +45,11 @@ mkt_ops_retention_risk_report:
     3. Churn Risk Rates Overall and by Segment
     4. At-Risk Customer Profile Summary
     5. Retention Strategy Recommendations
+    
+    For each section, include:
+    - The methodology used to analyze the data
+    - Key calculations and formulas applied
+    - Reasoning behind conclusions drawn
+    - Supporting data points and metrics
+    - Any assumptions made during analysis
   agent: mkt_ops_agent

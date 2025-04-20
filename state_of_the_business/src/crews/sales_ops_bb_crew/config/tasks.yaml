@@ -11,4 +11,15 @@ sales_ops_b2b_report:
     3. Month-over-Month Performance Comparison
     4. Notable Trends, Risks, or Anomalies
     5. Recommendations for Sales Leadership
+    
+    For each section, include:
+    - The methodology used to analyze the data
+    - Key calculations and formulas applied
+    - Reasoning behind conclusions drawn
+    - Supporting data points and metrics
+    - Any assumptions made during analysis
+    - Data validation steps taken
+    - Statistical significance of trends identified
+    - Pipeline analysis methodology
+    - Deal stage transition analysis
   agent: sales_ops_agent

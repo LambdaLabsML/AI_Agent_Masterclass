@@ -36,4 +36,5 @@ class SalesOpsB2BCrew:
             process=Process.sequential,
             verbose=True,
             full_output=True,
+            planning=True,
         )

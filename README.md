@@ -7,6 +7,7 @@
    ```
    LAMBDA_API_BASE=https://api.lambda.ai/v1
    LAMBDA_API_KEY=<your_lambda_api_key>
+   LAMBDA_MODEL="openai/llama-4-maverick"
    ```
 
 3. Run the following Docker commands:
@@ -16,7 +17,7 @@
    docker build -t ml_agent_workshop_image .
 
    # Run the container
-   docker run agent_workshop_image
+   docker run ml_agent_workshop_image
 
    # Get container ID
    docker ps -a

@@ -37,4 +37,5 @@ class CustomerSuccessOpsCrew:
             process=Process.sequential,
             verbose=True,
             full_output=True,
+            planning=True,
         )

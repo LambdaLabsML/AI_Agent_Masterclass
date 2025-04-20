@@ -12,4 +12,13 @@ sales_ops_b2c_report:
     4. Month-over-Month Performance Comparison
     5. Notable Trends or Anomalies (brief analysis)
     6. Recommendations (if applicable)
+    
+    For each section, include:
+    - The methodology used to analyze the data
+    - Key calculations and formulas applied
+    - Reasoning behind conclusions drawn
+    - Supporting data points and metrics
+    - Any assumptions made during analysis
+    - Data validation steps taken
+    - Statistical significance of trends identified
   agent: sales_ops_agent

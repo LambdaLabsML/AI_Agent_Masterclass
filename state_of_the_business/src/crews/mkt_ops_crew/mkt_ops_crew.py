@@ -20,6 +20,7 @@ class MktOpsCrew:
             config=self.agents_config["mkt_ops_agent"],
             tools=[DatasetFileReadTool()],
             llm=llm,
+            verbose=True,
         )
 
     @task
@@ -43,4 +44,5 @@ class MktOpsCrew:
             process=Process.sequential,
             verbose=True,
             full_output=True,
+            planning=True,
         )
