@@ -1,0 +1,57 @@
+mkt_ops_performance_report:
+  description: >
+    Analyze marketing performance across campaigns, customer value, discount effectiveness, and web engagement for {month}/{year}.
+    Use the following data: {mkt_ops_data}.
+    
+    Specifically:
+    - Calculate acceptance rates for each marketing campaign (AcceptedCmp1–AcceptedCmp5, Response)
+    - Estimate average Customer Lifetime Value (CLTV) based on amount spent (MntSpentProducts) and tenure (DtCustomer)
+    - Analyze the impact of discounts (NumDealsPurchases) and coupon codes (CouponCodesUsed) on purchasing behavior
+    - Evaluate website engagement metrics (NumWebVisitsMonth, NumWebPurchases) and web conversion rates
+    - Segment findings by customer demographics (Education, Marital Status, Income)
+    
+    Identify key trends, top-performing customer segments, and areas for optimization.
+  expected_output: >
+    A structured markdown report including:
+    1. Executive Summary (5-7 bullet points)
+    2. Campaign Performance Summary
+    3. CLTV Analysis (Overall and by Segment)
+    4. Discount and Coupon Impact Summary
+    5. Web Engagement and Funnel Analysis
+    6. Key Insights by Customer Segment
+    7. Strategic Recommendations for Marketing Leadership
+    
+    For each section include a sub-section called "Methodology" with the following:
+    - The methodology used to analyze the data
+    - Key calculations and formulas applied
+    - Reasoning behind conclusions drawn
+    - Supporting data points and metrics
+    - Any assumptions made during analysis
+  agent: mkt_ops_agent
+
+mkt_ops_retention_risk_report:
+  description: >
+    Identify and report on customer retention and churn risk based on recency (days since last purchase) and complaints in the last 2 years.
+    Use the following data: {mkt_ops_data}.
+    
+    Specifically:
+    - Flag customers with Recency > 90 days as high risk
+    - Flag customers who have lodged a complaint (Complain = 1)
+    - Segment churn risk rates by customer demographics (Education, Marital Status)
+    - Provide a list of at-risk customer profiles
+    - Recommend retention strategies targeted at reducing churn.
+  expected_output: >
+    A structured markdown report including:
+    1. Executive Summary (3-5 bullet points)
+    2. Churn Risk Identification Methodology
+    3. Churn Risk Rates Overall and by Segment
+    4. At-Risk Customer Profile Summary
+    5. Retention Strategy Recommendations
+    
+    For each section include a sub-section called "Methodology" with the following:
+    - The methodology used to analyze the data
+    - Key calculations and formulas applied
+    - Reasoning behind conclusions drawn
+    - Supporting data points and metrics
+    - Any assumptions made during analysis
+  agent: mkt_ops_agent
