@@ -181,3 +181,5 @@ lib/
 
 state_of_the_business/logs
 state_of_the_business/db
+
+docker_generated_reports

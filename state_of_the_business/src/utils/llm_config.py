@@ -30,7 +30,9 @@ class LLMConfig:
                     "Please set LAMBDA_API_BASE and LAMBDA_API_KEY."
                 )
 
-            self._llm = LLM(base_url=base_url, model=model, api_key=api_key)
+            self._llm = LLM(
+                base_url=base_url, model=model, api_key=api_key
+            )
 
     @property
     def llm(self) -> LLM:
