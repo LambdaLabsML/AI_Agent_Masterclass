@@ -1,6 +1,6 @@
 sales_ops_b2b_report:
   description: >
-    Analyze the B2B sales data for {month} {year} in this dataset: {b2b_sales_data}.
+    Analyze the B2B sales data for {month}/{year} in this dataset: {b2b_sales_data}.
     Your analysis should include total closed-won revenue, number of deals closed, average deal size, sales cycle length, pipeline coverage, and new logo acquisition.
     Compare performance to the prior month and identify any material deviations, emerging trends, or areas of concern.
     Focus on delivering insights that are actionable for both sales leadership and executive stakeholders.
@@ -12,7 +12,7 @@ sales_ops_b2b_report:
     4. Notable Trends, Risks, or Anomalies
     5. Recommendations for Sales Leadership
     
-    For each section, include:
+    For each section include a sub-section called "Methodology" with the following:
     - The methodology used to analyze the data
     - Key calculations and formulas applied
     - Reasoning behind conclusions drawn

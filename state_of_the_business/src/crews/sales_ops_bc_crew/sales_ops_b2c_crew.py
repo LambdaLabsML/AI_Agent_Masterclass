@@ -1,5 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+
 from src.tools.file_read_tool import DatasetFileReadTool
 from src.utils.llm_config import LLMConfig
 
@@ -19,6 +20,7 @@ class SalesOpsB2CCrew:
             config=self.agents_config["sales_ops_agent"],
             tools=[DatasetFileReadTool()],
             llm=llm,
+            verbose=True,
         )
 
     @task
@@ -36,6 +38,6 @@ class SalesOpsB2CCrew:
             process=Process.sequential,
             verbose=True,
             full_output=True,
-            # planning=True,
-            planning_llm=llm
+            planning=True,
+            planning_llm=llm,
         )

@@ -5,10 +5,3 @@ sales_ops_b2c_report:
   expected_output: >
     A report on the ecommerce sales outcomes for the company.
   agent: sales_ops_agent
-
-sales_ops_b2b_report:
-  description: >
-    Write a report on the b2b sales outcomes for the company.
-    Ensure the report is accurate and up to date for the last full month of sales.
-  expected_output: >
-    A report on the b2b sales outcomes for the company.

@@ -13,7 +13,7 @@ sales_ops_b2c_report:
     5. Notable Trends or Anomalies (brief analysis)
     6. Recommendations (if applicable)
     
-    For each section, include:
+    For each section include a sub-section called "Methodology" with the following:
     - The methodology used to analyze the data
     - Key calculations and formulas applied
     - Reasoning behind conclusions drawn

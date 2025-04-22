@@ -1,7 +1,7 @@
 cs_ops_board_report:
   description: >
-    Create a comprehensive Customer Success board report based on the latest full calendar quarter of ticket and support data.
-    
+    Create a comprehensive Customer Success board report for {month}/{year}.
+    use the following data: {cs_ops_data}.
     Your report must include:
     - Customer Satisfaction Summary (CSAT distribution and trends by channel and product group)
     - SLA Compliance Analysis (first response and resolution compliance rates by priority and agent group)
@@ -33,7 +33,7 @@ cs_ops_board_report:
     7. Section 6: Strategic Recommendations
        - 3–5 actionable suggestions for improving CSAT, SLA compliance, and retention
     
-    For each section, include:
+    For each section include a sub-section called "Methodology" with the following:
     - The methodology used to analyze the data
     - Key calculations and formulas applied
     - Reasoning behind conclusions drawn

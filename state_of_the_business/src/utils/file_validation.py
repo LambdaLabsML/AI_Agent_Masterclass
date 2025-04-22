@@ -16,6 +16,7 @@ def validate_csv_files():
 
     # get all csv files
     datasets_dir = Path(__file__).parent.parent.parent / "datasets"
+    print(datasets_dir)
     csv_files = list(datasets_dir.glob("*.csv"))
 
     for fp in csv_files:

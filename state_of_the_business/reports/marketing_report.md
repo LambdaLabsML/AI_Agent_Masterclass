@@ -1,35 +1,42 @@
+# Customer Retention and Churn Risk Report
+
 ## Executive Summary
-* High-risk customers were identified based on recency (> 90 days) and complaints.
-* Churn risk rates were analyzed by customer demographics (Education, Marital Status).
-* At-risk customer profiles were summarized.
-* Targeted retention strategies were recommended.
+* The overall churn risk rate is 24.49%
+* Customers with higher education (PhD, Postgraduate, Graduate) have a churn risk rate of 23.08%, 20.00%, and 25.00% respectively.
+* Customers with different marital statuses have varying churn risk rates.
+* 24.49% of customers are at risk of churning.
 
 ## Churn Risk Identification Methodology
-To identify churn risk, the following steps were taken:
-1. **Flag High-Risk Customers**: Customers with 'Recency' > 90 days were flagged as high-risk.
-2. **Identify Customers with Complaints**: Customers who lodged a complaint (Complain = 1) were identified and added to the high-risk list.
-The methodology used is based on the assumption that customers with recent purchases are less likely to churn, and those who have lodged complaints are more likely to churn.
+* Customers with Recency > 90 days are flagged as high risk.
+* Customers who have lodged a complaint (Complain = 1) are flagged as high risk.
+* Overall Churn Risk is calculated by combining the above two conditions.
 
 ## Churn Risk Rates Overall and by Segment
-Churn risk rates were analyzed overall and by customer demographics (Education, Marital Status).
-* Overall Churn Risk Rate: Assuming 20% of customers were flagged as high-risk based on recency and complaints.
-* Churn Risk Rate by Education:
-	+ Postgraduate: 15%
-	+ Graduate: 20%
-	+ Undergraduate: 25%
-* Churn Risk Rate by Marital Status:
-	+ Married: 18%
-	+ Single: 22%
+* Overall Churn Risk Rate: 24.49%
+Education|Churn_Risk
+PhD|0.23076923076923078
+Graduate|0.25
+Postgraduate|0.2
+Basic|0.24444444444444444
+High School|0.25
+Marital|Churn_Risk
+Single|0.25
+Married|0.2
+Divorced|0.2727272727272727
+Separated|0.25
+Widow|0.22222222222222222
 
 ## At-Risk Customer Profile Summary
-At-risk customers were summarized based on the combined data (recency and complaints).
-* Demographics: Customers with undergraduate education and single marital status had higher churn risk rates.
-* Key characteristics: Low recency, high complaints.
+* Number of at-risk customers: 24
+* At-risk customers have an average Recency of 73.33 days.
+* At-risk customers have an average Income of 94491.19.
 
 ## Retention Strategy Recommendations
-Based on the analysis, the following targeted retention strategies are recommended:
-1. **Personalized Outreach**: Offer personalized promotions and content to high-risk customers.
-2. **Incentives**: Provide incentives to customers who have lodged complaints to improve their satisfaction.
-3. **Segmented Marketing**: Optimize marketing campaigns for customer segments with higher churn risk rates (undergraduate and single customers).
+* Offer loyalty programs to customers with high Recency values.
+* Improve customer service to reduce complaints.
+* Targeted marketing campaigns towards customers with higher education and different marital statuses.
 
-By implementing these recommendations, marketing leadership can reduce churn risk, improve customer retention, and drive revenue growth.
+### Methodology
+* The churn risk is identified based on Recency and Complain variables.
+* Churn risk rates are calculated for overall customers and by Education and Marital Status.
+* At-risk customer profiles are identified based on the churn risk flag.

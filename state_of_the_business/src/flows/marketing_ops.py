@@ -30,7 +30,9 @@ class MarketingOpsFlow(Flow[MarketingOpsState]):
                 .crew()
                 .kickoff(
                     inputs={
-                        "mkt_sales_data": str(
+                        "month": "03",
+                        "year": "2025",
+                        "mkt_ops_data": str(
                             self.state.datasets_dir
                             / "spaceoutfitters_marketing_campaigns.csv"
                         ),

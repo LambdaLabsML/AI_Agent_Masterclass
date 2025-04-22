@@ -1,6 +1,7 @@
 mkt_ops_performance_report:
   description: >
-    Analyze marketing performance across campaigns, customer value, discount effectiveness, and web engagement for the last full calendar month.
+    Analyze marketing performance across campaigns, customer value, discount effectiveness, and web engagement for {month}/{year}.
+    Use the following data: {mkt_ops_data}.
     
     Specifically:
     - Calculate acceptance rates for each marketing campaign (AcceptedCmp1–AcceptedCmp5, Response)
@@ -20,7 +21,7 @@ mkt_ops_performance_report:
     6. Key Insights by Customer Segment
     7. Strategic Recommendations for Marketing Leadership
     
-    For each section, include:
+    For each section include a sub-section called "Methodology" with the following:
     - The methodology used to analyze the data
     - Key calculations and formulas applied
     - Reasoning behind conclusions drawn
@@ -31,6 +32,7 @@ mkt_ops_performance_report:
 mkt_ops_retention_risk_report:
   description: >
     Identify and report on customer retention and churn risk based on recency (days since last purchase) and complaints in the last 2 years.
+    Use the following data: {mkt_ops_data}.
     
     Specifically:
     - Flag customers with Recency > 90 days as high risk
@@ -46,7 +48,7 @@ mkt_ops_retention_risk_report:
     4. At-Risk Customer Profile Summary
     5. Retention Strategy Recommendations
     
-    For each section, include:
+    For each section include a sub-section called "Methodology" with the following:
     - The methodology used to analyze the data
     - Key calculations and formulas applied
     - Reasoning behind conclusions drawn
