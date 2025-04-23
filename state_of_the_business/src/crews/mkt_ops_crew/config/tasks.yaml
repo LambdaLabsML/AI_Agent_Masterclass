@@ -21,17 +21,17 @@ mkt_ops_performance_report:
     6. Key Insights by Customer Segment
     7. Strategic Recommendations for Marketing Leadership
     
-    For each section include a sub-section called "Methodology" with the following:
-    - The methodology used to analyze the data
-    - Key calculations and formulas applied
-    - Reasoning behind conclusions drawn
-    - Supporting data points and metrics
-    - Any assumptions made during analysis
-  agent: mkt_ops_agent
+    # For each section include a sub-section called "Methodology" with the following:
+    # - The methodology used to analyze the data
+    # - Key calculations and formulas applied
+    # - Reasoning behind conclusions drawn
+    # - Supporting data points and metrics
+    # - Any assumptions made during analysis
+  agent: ______
 
 mkt_ops_retention_risk_report:
   description: >
-    Identify and report on customer retention and churn risk based on recency (days since last purchase) and complaints in the last 2 years.
+    Identify and report on customer retention and churn risk based on recency (days since last purchase) and complaints {month}/{year}.
     Use the following data: {mkt_ops_data}.
     
     Specifically:
@@ -48,10 +48,13 @@ mkt_ops_retention_risk_report:
     4. At-Risk Customer Profile Summary
     5. Retention Strategy Recommendations
     
-    For each section include a sub-section called "Methodology" with the following:
-    - The methodology used to analyze the data
-    - Key calculations and formulas applied
-    - Reasoning behind conclusions drawn
-    - Supporting data points and metrics
-    - Any assumptions made during analysis
-  agent: mkt_ops_agent
+    # For each section include a sub-section called "Methodology" with the following:
+    # - The methodology used to analyze the data
+    # - Key calculations and formulas applied
+    # - Reasoning behind conclusions drawn
+    # - Supporting data points and metrics
+    # - Any assumptions made during analysis
+  agent: _____
+
+# mkt_ops_agent
+# mkt_ops_agent

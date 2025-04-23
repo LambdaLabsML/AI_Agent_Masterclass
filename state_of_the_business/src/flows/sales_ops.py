@@ -27,18 +27,14 @@ class SalesOpsFlow(Flow[SalesOpsState]):
         logger.info("Starting B2C sales report generation...")
 
         # Start crew Sales report
-        result = (
-            SalesOpsB2CCrew()
-            .crew()
-            .kickoff(
-                inputs={
-                    "month": "03",
-                    "year": "2025",
-                    "b2c_sales_data": str(
-                        self.state.datasets_dir / "spaceoutfitters_b2c_sales.csv"
-                    ),
-                }
-            )
+        result = _________.crew().kickoff(
+            inputs={
+                "month": "03",
+                "year": "2025",
+                "b2c_sales_data": str(
+                    self.state.datasets_dir / "spaceoutfitters_b2c_sales.csv"
+                ),
+            }
         )
 
         # Save the reports to the state
@@ -77,18 +73,14 @@ class SalesOpsFlow(Flow[SalesOpsState]):
         logger.info("Starting B2B sales report generation...")
 
         # Start crew Sales report
-        result = (
-            SalesOpsB2BCrew()
-            .crew()
-            .kickoff(
-                inputs={
-                    "month": "03",
-                    "year": "2025",
-                    "b2b_sales_data": str(
-                        self.state.datasets_dir / "spaceoutfitters_b2b_sales_lite.csv"
-                    ),
-                }
-            )
+        result = _________.crew().kickoff(
+            inputs={
+                "month": "03",
+                "year": "2025",
+                "b2b_sales_data": str(
+                    self.state.datasets_dir / "spaceoutfitters_b2b_sales_lite.csv"
+                ),
+            }
         )
 
         # Save the reports to the state
@@ -121,3 +113,7 @@ class SalesOpsFlow(Flow[SalesOpsState]):
             logger.info(f"Complete report saved to {report_path}")
         else:
             logger.warning("No B2B report content available")
+
+
+# SalesOpsB2CCrew()
+# SalesOpsB2BCrew()

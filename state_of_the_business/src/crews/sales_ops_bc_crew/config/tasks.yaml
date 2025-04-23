@@ -1,24 +1,29 @@
 sales_ops_b2c_report:
   description: >
-    Analyze the ecommerce (B2C) sales data for {month} {year} in this dataset: {b2c_sales_data}.
+    Analyze the ecommerce (B2C) sales data for ________ in this dataset: ____.
     Your analysis should focus on key performance metrics such as total revenue, number of orders, average order value (AOV), top-selling products, and customer acquisition trends.
     Identify month-over-month changes compared to the previous month and highlight any notable patterns or anomalies.
     Ensure data is accurate, up-to-date, and presented in a clear, executive-friendly format.
   expected_output: >
     A structured markdown report including:
     1. Executive Summary (3-5 bullet points)
-    2. Key Metrics Table (Revenue, Orders, AOV, Customer Acquisition, Conversion Rate)
+    2. _____ (Revenue, Orders, AOV, Customer Acquisition, Conversion Rate)
     3. Top 5 Best-Selling Products (with units sold and revenue generated)
     4. Month-over-Month Performance Comparison
     5. Notable Trends or Anomalies (brief analysis)
     6. Recommendations (if applicable)
     
-    For each section include a sub-section called "Methodology" with the following:
-    - The methodology used to analyze the data
-    - Key calculations and formulas applied
-    - Reasoning behind conclusions drawn
-    - Supporting data points and metrics
-    - Any assumptions made during analysis
-    - Data validation steps taken
-    - Statistical significance of trends identified
+    # For each section include a sub-section called "Methodology" with the following:
+    # - The methodology used to analyze the data
+    # - Key calculations and formulas applied
+    # - Reasoning behind conclusions drawn
+    # - Supporting data points and metrics
+    # - Any assumptions made during analysis
+    # - Data validation steps taken
+    # - Statistical significance of trends identified
   agent: sales_ops_agent
+
+
+# {month}/{year} 
+# {b2c_sales_data}.
+# Key Metrics Table
