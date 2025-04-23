@@ -10,7 +10,7 @@ from src.utils.file_validation import validate_csv_files
 logger = logging.getLogger(__name__)
 
 # TODO: 
-    # If you are running the docker-compose.yml file, uncomment the following lines.
+    # If you are running the docker-compose.yml file, uncomment the following lines (part 2).
     # However, if your running the individual Dockerfiles, leave these commented out as the ML Flow Server will not be running.
 
 # # Enable MLFlow logging

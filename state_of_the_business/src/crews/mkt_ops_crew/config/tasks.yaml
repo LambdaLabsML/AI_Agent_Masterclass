@@ -48,10 +48,11 @@ mkt_ops_retention_risk_report:
     4. At-Risk Customer Profile Summary
     5. Retention Strategy Recommendations
     
-    For each section include a sub-section called "Methodology" with the following:
-    - The methodology used to analyze the data
-    - Key calculations and formulas applied
-    - Reasoning behind conclusions drawn
-    - Supporting data points and metrics
-    - Any assumptions made during analysis
+    ## TODO: Uncomment the methodology section (part 2)
+    # For each section include a sub-section called "Methodology" with the following:
+    # - The methodology used to analyze the data
+    # - Key calculations and formulas applied
+    # - Reasoning behind conclusions drawn
+    # - Supporting data points and metrics
+    # - Any assumptions made during analysis
   agent: mkt_ops_agent

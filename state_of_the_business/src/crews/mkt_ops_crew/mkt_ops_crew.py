@@ -45,6 +45,7 @@ class MktOpsCrew:
             process=Process.sequential,
             verbose=True,
             full_output=True,
-            planning=True,
-            planning_llm=llm,
+            ## TODO: Uncomment to enable planning (part 2)
+            # planning=True,
+            # planning_llm=llm,
         )

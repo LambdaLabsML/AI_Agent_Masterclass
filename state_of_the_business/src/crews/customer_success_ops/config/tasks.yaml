@@ -32,16 +32,17 @@ cs_ops_board_report:
        - High-risk customer profiles (spaceport, topic, agent group)
     7. Section 6: Strategic Recommendations
        - 3–5 actionable suggestions for improving CSAT, SLA compliance, and retention
-    
-    For each section include a sub-section called "Methodology" with the following:
-    - The methodology used to analyze the data
-    - Key calculations and formulas applied
-    - Reasoning behind conclusions drawn
-    - Supporting data points and metrics
-    - Any assumptions made during analysis
-    - Data validation steps taken
-    - Statistical significance of trends identified
-    - Correlation analysis between metrics
-    - Root cause analysis methodology
-    - Trend analysis methodology
+   
+   ## TODO: Uncomment the methodology section (part 2)
+   #  For each section include a sub-section called "Methodology" with the following:
+   #  - The methodology used to analyze the data
+   #  - Key calculations and formulas applied
+   #  - Reasoning behind conclusions drawn
+   #  - Supporting data points and metrics
+   #  - Any assumptions made during analysis
+   #  - Data validation steps taken
+   #  - Statistical significance of trends identified
+   #  - Correlation analysis between metrics
+   #  - Root cause analysis methodology
+   #  - Trend analysis methodology
   agent: customer_success_ops_agent

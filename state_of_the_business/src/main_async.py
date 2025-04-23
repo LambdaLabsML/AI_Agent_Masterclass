@@ -11,7 +11,7 @@ from src.utils.file_validation import validate_csv_files
 logger = logging.getLogger(__name__)
 
 # TODO: 
-    # If you are running the docker-compose.yml file, uncomment the following lines.
+    # If you are running the docker-compose.yml file, uncomment the following lines (part 2).
     # However, if your running the individual Dockerfiles, leave these commented out as the ML Flow Server will not be running.
 
 # # Enable MLFlow logging
@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 async def run_flow(flow_class, flow_name):
     logger.info(f"- Starting {flow_name}")
     flow = flow_class()
-    result = await flow.kickoff_async()
+    # TODO: add line to kick off the flow async
     logger.info(f"- {flow_name} completed successfully!")
     return flow, result
 
@@ -39,14 +39,11 @@ async def kickoff():
     # Pre-async run validation of all CSV files
     validate_csv_files()
 
-    # Create tasks for each flow
-    tasks = [
-        run_flow(SalesOpsFlow, "Sales Operations Flow"),
-        run_flow(MarketingOpsFlow, "Marketing Operations Flow"),
-        run_flow(CustomerSuccessOpsFlow, "Customer Success Operations Flow"),
-    ]
+    # TODO: Create the tasks for each flow
+    tasks = []
 
     # Run all flows concurrently and wait for completion
+    # TODO: 
     results = await asyncio.gather(*tasks)
     print(f"Final Results: {results}")
 
