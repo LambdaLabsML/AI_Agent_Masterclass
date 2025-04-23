@@ -35,7 +35,7 @@ class SalesOpsFlow(Flow[SalesOpsState]):
                     "month": "03",
                     "year": "2025",
                     "b2c_sales_data": str(
-                        self.state.datasets_dir / "spaceoutfitters_sales.csv"
+                        self.state.datasets_dir / "spaceoutfitters_b2c_sales.csv"
                     ),
                 }
             )
@@ -49,7 +49,6 @@ class SalesOpsFlow(Flow[SalesOpsState]):
         else:
             logger.error("Failed to generate B2C sales reports")
 
-    # TODO: do we need to display report summaries?
     @listen(generate_b2c_sales_reports)
     def display_report_summaries(self):
         logger.info("Displaying report summaries...")

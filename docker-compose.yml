@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.async
+    volumes:
+      - ./state_of_the_business:/app/state_of_the_business
+    depends_on:
+      - mlflow
+    networks:
+      - app-network
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    ports:
+      - "8000:8000"
+    command: mlflow server --host 0.0.0.0 --port 8000
+    networks:
+      - app-network
+
+networks:
+  app-network:

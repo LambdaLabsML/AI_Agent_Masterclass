@@ -1,7 +1,7 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-
 from src.utils.llm_config import LLMConfig
+# from src.tools.llama_csv_file_read_tool import LlamaCSVFileReadTool
 from src.tools.file_read_tool import DatasetFileReadTool
 
 llm = LLMConfig().llm
@@ -18,6 +18,7 @@ class MktOpsCrew:
     def mkt_ops_agent(self) -> Agent:
         return Agent(
             config=self.agents_config["mkt_ops_agent"],
+            # tools=[LlamaCSVFileReadTool()],
             tools=[DatasetFileReadTool()],
             llm=llm,
             verbose=True,
