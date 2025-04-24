@@ -9,9 +9,9 @@ from src.utils.file_validation import validate_csv_files
 # Get logger for this module
 logger = logging.getLogger(__name__)
 
-# TODO: 
-    # If you are running the docker-compose.yml file, uncomment the following lines (part 2).
-    # However, if your running the individual Dockerfiles, leave these commented out as the ML Flow Server will not be running.
+# TODO:
+# If you are running the docker-compose.yml file, uncomment the following lines.
+# However, if your running the individual Dockerfiles, leave these commented out as the ML Flow Server will not be running.
 
 # # Enable MLFlow logging
 # import mlflow
@@ -39,12 +39,11 @@ def kickoff():
 
     flow_results_list = []
     for flow in flows_to_run:
-        logger.info(f"- Starting {flow[1]}")  
+        logger.info(f"- Starting {flow[1]}")
         flow_result = flow[0].kickoff()
         flow_class = flow[0]
         logger.info(f"- {flow[1]} completed successfully!")
         flow_results_list.append(flow_class)
-
 
     # Combine results into a structured output
     sales_ops_flow = flow_results_list[0]

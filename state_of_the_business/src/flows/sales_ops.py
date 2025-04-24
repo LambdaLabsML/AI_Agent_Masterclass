@@ -85,7 +85,7 @@ class SalesOpsFlow(Flow[SalesOpsState]):
                     "month": "03",
                     "year": "2025",
                     "b2b_sales_data": str(
-                        self.state.datasets_dir / "spaceoutfitters_b2b_sales_lite.csv"
+                        self.state.datasets_dir / "spaceoutfitters_b2b_sales.csv"
                     ),
                 }
             )
