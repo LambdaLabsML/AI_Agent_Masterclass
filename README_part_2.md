@@ -2,7 +2,6 @@
 
 ## Requirements
 - [Docker](https://www.docker.com/)
-- [Valid Lambda API Key](https://lambda.ai/inference)
 
 ## Setup Instructions  
 
@@ -14,6 +13,7 @@
 
 2. Create a `.env` file in the root directory and run the following:
     ```
+
     cp .env_example .env
     (on windows: copy .env_example .env)
     ```

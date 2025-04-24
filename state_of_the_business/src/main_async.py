@@ -25,7 +25,8 @@ logger = logging.getLogger(__name__)
 async def run_flow(flow_class, flow_name):
     logger.info(f"- Starting {flow_name}")
     flow = flow_class()
-    # TODO: add line to kick off the flow async
+    # # TODO: add line to kick off the flow async
+    # result = await flow.kickoff_async()
     logger.info(f"- {flow_name} completed successfully!")
     return flow, result
 
