@@ -20,7 +20,13 @@
    LAMBDA_MODEL="openai/llama-4-maverick-17b-128e-instruct-fp8"
    ```
 
-3. Run with Docker Compose (Recommended)
+3. Test that you can connect to Lambda's Inference API
+   ```
+   source .env
+   curl https://api.lambdalabs.com/v1/lambda/models -H "Authorization: Bearer $LAMBDA_API_KEY
+   ```
+
+4. Run with Docker Compose (Recommended)
    ```
    # Default (crews will run async and MLFlow will be launched)
    docker compose up --build
@@ -29,7 +35,7 @@
    http://0.0.0.0:8000/
    ```
 
-4. (Optional) Run the Crews Synchronously Without MLflow
+5. (Optional) Run the Crews Synchronously Without MLflow
    ```
    # Build the Docker image
    docker build -f Dockerfile.sync -t ml_agent_workshop_sync .
@@ -44,7 +50,7 @@
    docker cp <container_id>:/app/state_of_the_business/reports <your_local_computer_path>
    ```
 
-4. (Optional) Run the Crews Asynchronously Without MLflow
+6. (Optional) Run the Crews Asynchronously Without MLflow
    ```
    # Build the Docker image
    docker build -f Dockerfile.async -t ml_agent_workshop_async .
