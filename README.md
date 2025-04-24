@@ -23,7 +23,7 @@
 3. Test that you can connect to Lambda's Inference API
    ```
    source .env
-   curl https://api.lambdalabs.com/v1/lambda/models -H "Authorization: Bearer $LAMBDA_API_KEY
+   curl https://api.lambdalabs.com/v1/lambda/models -H "Authorization: Bearer $LAMBDA_API_KEY"
    ```
 
 4. Run with Docker Compose (Recommended)
