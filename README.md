@@ -27,7 +27,7 @@
 
    # Once the container is up and running, you can visit the following link in your browser, to track the execution traces on MLFlow:
    http://0.0.0.0:8000/
-
+   ```
 
 4. (Optional) Run the Crews Synchronously Without MLflow
    ```
