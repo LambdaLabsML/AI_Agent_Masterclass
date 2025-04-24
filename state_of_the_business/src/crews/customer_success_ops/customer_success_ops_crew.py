@@ -38,9 +38,12 @@ class CustomerSuccessOpsCrew:
         return Crew(
             agents=self.agents,  # Automatically created by the @agent decorator
             tasks=self.tasks,  # Automatically created by the @task decorator
-            process=Process.sequential,
+            process=_________,
             verbose=True,
             full_output=True,
             # planning=True,
             # planning_llm=llm,
         )
+
+
+# Process.sequential
