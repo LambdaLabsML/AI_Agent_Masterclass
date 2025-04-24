@@ -5,7 +5,6 @@
 - [Valid Lambda API Key](https://lambda.ai/inference)
 
 ## Setup Instructions  
-*(If you are attending the in-person workshop, please checkout to `part_1` or `workshop_part_2` and **ignore the instructions below**.)*
 
 1. Clone the Repository and Checkout the Correct Branch
    ```
