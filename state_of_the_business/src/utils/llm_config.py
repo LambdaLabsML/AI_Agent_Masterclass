@@ -31,7 +31,9 @@ class LLMConfig:
                 )
 
             self._llm = LLM(
-                base_url=base_url, model=model, api_key=api_key
+                base_url=base_url,
+                model=model,
+                api_key=api_key,
             )
 
     @property
