@@ -47,13 +47,7 @@ mkt_ops_retention_risk_report:
     3. Churn Risk Rates Overall and by Segment
     4. At-Risk Customer Profile Summary
     5. Retention Strategy Recommendations
-    
-    # For each section include a sub-section called "Methodology" with the following:
-    # - The methodology used to analyze the data
-    # - Key calculations and formulas applied
-    # - Reasoning behind conclusions drawn
-    # - Supporting data points and metrics
-    # - Any assumptions made during analysis
+
   agent: _____
 
 # mkt_ops_agent
