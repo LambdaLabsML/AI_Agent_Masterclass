@@ -24,6 +24,9 @@ jobs:
           elif [[ "$BRANCH" == "workshop_part_2" ]]; then
             echo "DOCKERFILE=dockerfile.async" >> $GITHUB_ENV
             echo "IMAGE_NAME=nickharvey/lambda-ai-agent-masterclass-async" >> $GITHUB_ENV
+          elif [[ "$BRANCH" == "main" ]]; then
+            echo "DOCKERFILE=dockerfile.async" >> $GITHUB_ENV
+            echo "IMAGE_NAME=nickharvey/lambda-ai-agent-masterclass-async" >> $GITHUB_ENV
           else
             echo "Unsupported branch: $BRANCH"
             exit 1
