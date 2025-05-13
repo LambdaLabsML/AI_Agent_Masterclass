@@ -27,7 +27,7 @@ mkt_ops_performance_report:
     # - Reasoning behind conclusions drawn
     # - Supporting data points and metrics
     # - Any assumptions made during analysis
-  agent: ______
+  agent: mkt_ops_agent
 
 mkt_ops_retention_risk_report:
   description: >
@@ -48,7 +48,4 @@ mkt_ops_retention_risk_report:
     4. At-Risk Customer Profile Summary
     5. Retention Strategy Recommendations
 
-  agent: _____
-
-# mkt_ops_agent
-# mkt_ops_agent
+  agent: mkt_ops_agent

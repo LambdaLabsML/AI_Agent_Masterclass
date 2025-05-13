@@ -73,14 +73,18 @@ class SalesOpsFlow(Flow[SalesOpsState]):
         logger.info("Starting B2B sales report generation...")
 
         # Start crew Sales report
-        result = _________.crew().kickoff(
-            inputs={
-                "month": "03",
-                "year": "2025",
-                "b2b_sales_data": str(
-                    self.state.datasets_dir / "spaceoutfitters_b2b_sales_lite.csv"
-                ),
-            }
+        result = (
+            SalesOpsB2BCrew()
+            .crew()
+            .kickoff(
+                inputs={
+                    "month": "03",
+                    "year": "2025",
+                    "b2b_sales_data": str(
+                        self.state.datasets_dir / "spaceoutfitters_b2b_sales_lite.csv"
+                    ),
+                }
+            )
         )
 
         # Save the reports to the state
@@ -116,4 +120,3 @@ class SalesOpsFlow(Flow[SalesOpsState]):
 
 
 # SalesOpsB2CCrew()
-# SalesOpsB2BCrew()
