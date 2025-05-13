@@ -5,6 +5,7 @@ on:
     branches:
       - part1
       - workshop_part_2
+      
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
