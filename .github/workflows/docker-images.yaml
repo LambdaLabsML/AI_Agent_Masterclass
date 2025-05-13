@@ -3,7 +3,6 @@ name: Build and Push Docker Images
 on:
   push:
     branches:
-      - main
       - part1
       - workshop_part_2
 jobs:
@@ -22,9 +21,6 @@ jobs:
             echo "DOCKERFILE=Dockerfile.sync" >> $GITHUB_ENV
             echo "IMAGE_NAME=nickharvey/lambda-ai-agent-masterclass-sync" >> $GITHUB_ENV
           elif [[ "$BRANCH" == "workshop_part_2" ]]; then
-            echo "DOCKERFILE=Dockerfile.async" >> $GITHUB_ENV
-            echo "IMAGE_NAME=nickharvey/lambda-ai-agent-masterclass-async" >> $GITHUB_ENV
-          elif [[ "$BRANCH" == "main" ]]; then
             echo "DOCKERFILE=Dockerfile.async" >> $GITHUB_ENV
             echo "IMAGE_NAME=nickharvey/lambda-ai-agent-masterclass-async" >> $GITHUB_ENV
           else
